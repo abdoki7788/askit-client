@@ -1,0 +1,11 @@
+.make_q_alert {
+    width: 80%;
+    margin: 20px auto 15px auto;
+    background-color: #CAF0F8;
+    border: 1px solid #90E0EF;
+    color: #0096C7;
+    direction: rtl;
+    padding: 15px 18px;
+    border-radius: 3px;
+    font-size: 18px;
+}

@@ -1,0 +1,51 @@
+header {
+    background-color: #fff;
+    width: 90%;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.logo {
+    width: 150px;
+    height: 55px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.sign_in {
+    margin-right: 20px;
+    background-color: #00B4D8;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #fff;
+    border: 1px solid #00B4D8;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .2s;
+}
+.sign_in:hover {
+    background: none;
+    color: #00B4D8;
+}
+
+.sign_up {
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid #00B4D8;
+    font-size: 17px;
+    cursor: pointer;
+    transition: .2s;
+    background: none;
+    color: #00B4D8;
+}
+.sign_up:hover {
+    background-color: #00B4D8;
+    color: #fff;
+}
