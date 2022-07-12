@@ -13,8 +13,12 @@ function Home() {
         <div className='home'>
             <Alert />
             <Header />
-            <Menu />
-            <Questions />
+
+            <div className='home_content'>
+                <Menu />
+                <Questions />
+            </div>
+
             {/* <Footer /> */}
         </div>
      );

@@ -10,8 +10,10 @@
 .questions {
     border: solid rgb(218, 218, 218);
     border-width: 0 0 0 2px;
-    width: 80.5%;
-    margin-right: 65px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .q_box {
