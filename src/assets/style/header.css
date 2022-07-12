@@ -9,43 +9,37 @@ header {
     border-radius: 10px;
 }
 
-.logo {
+.header_logo {
     width: 150px;
     height: 55px;
     margin-left: 20px;
     cursor: pointer;
 }
 
-.sign_in {
+.sign_in ,
+.sign_up {
     margin-right: 20px;
-    background-color: #00B4D8;
+    background-color: #3b82f6;
     border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
+    border-radius: 3px;
+    padding: 3px 8px;
     color: #fff;
-    border: 1px solid #00B4D8;
+    border: 1px solid #3b82f6;
     font-size: 17px;
     cursor: pointer;
     transition: .2s;
 }
 .sign_in:hover {
     background: none;
-    color: #00B4D8;
+    color: #3b82f6;
 }
 
 .sign_up {
-    margin-right: 10px;
-    border: none;
-    border-radius: 5px;
-    padding: 5px 10px;
-    border: 1px solid #00B4D8;
-    font-size: 17px;
-    cursor: pointer;
-    transition: .2s;
+    margin-right: 8px;
     background: none;
-    color: #00B4D8;
+    color: #3b82f6;
 }
 .sign_up:hover {
-    background-color: #00B4D8;
+    background-color: #3b82f6;
     color: #fff;
 }

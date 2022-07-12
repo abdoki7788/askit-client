@@ -7,6 +7,13 @@
     src: url(../font/Vazir-Variable.woff2);
 }
 
+.questions {
+    border: solid rgb(218, 218, 218);
+    border-width: 0 0 0 2px;
+    width: 80.5%;
+    margin-right: 65px;
+}
+
 .q_box {
     width: 100%;
     margin: 20px 0;
@@ -31,12 +38,13 @@
     font-size: 20px;
     font-family: Vazir-Bold;
     width: 75%;
-    cursor: default;
+    cursor: pointer;
     user-select: none;
     direction: rtl;
+    transition: .2s;
 }
 .title:hover {
-    color: #00B4D8;
+    color: #3b82f6;
 }
 
 .creator {
@@ -69,7 +77,7 @@
     user-select: none;
 }
 .creator_name:hover {
-    color: #00B4D8;
+    color: #3b82f6;
 }
 
 .who_create {
@@ -110,11 +118,12 @@
     font-size: 14px;
     border: 1px solid #eee;
     color: #4a4e69;
+    transition: .2s;
 }
 .tag:hover {
     border-width: 1px;
-    text-decoration: underline;
-    color: #0096C7;
+    color: #3b82f6;
+    border-color: #3b82f6;
 }
 
 .q_icons {
@@ -125,9 +134,7 @@
 }
 
 .q_icon_heart {
-    color: rgb(165, 165, 165);
-    background-color: #edf2f4;
-    border: 1px solid #d9d9d9;
+    color: #ccc;
     width: 35px;
     height: 35px;
     display: flex;
@@ -136,12 +143,10 @@
     cursor: pointer;
     font-size: 22px;
     border-radius: 5px;
-    margin-right: 12px;
+    margin-right: 5px;
 }
 .q_icon_heart_selected {
     color: red;
-    background-color: #edf2f4;
-    border: 1px solid #d9d9d9;
     width: 35px;
     height: 35px;
     display: flex;
@@ -150,13 +155,11 @@
     cursor: pointer;
     font-size: 22px;
     border-radius: 5px;
-    margin-right: 12px;
+    margin-right: 5px;
 }
 
 .q_icon_bookmark {
-    color: rgb(165, 165, 165);
-    background-color: #edf2f4;
-    border: 1px solid #d9d9d9;
+    color: #ccc;
     width: 35px;
     height: 35px;
     display: flex;
@@ -168,8 +171,6 @@
 }
 .q_icon_bookmark_selected {
     color: #4a4e69;
-    background-color: #edf2f4;
-    border: 1px solid #d9d9d9;
     width: 35px;
     height: 35px;
     display: flex;
@@ -180,8 +181,78 @@
     border-radius: 5px;
 }
 
-/* Responsive */
-@media (max-width: 485px) {
+/* responsive */
+@media (max-width: 1280px) {
+    .questions {
+        width: 79.5%;
+    }
+}
+@media (max-width: 1210px) {
+    .questions {
+        width: 78.5%;
+    }
+}
+@media (max-width: 1155px) {
+    .questions {
+        width: 77%;
+    }
+}
+@media (max-width: 1085px) {
+    .questions {
+        width: 75.5%;
+    }
+}
+@media (max-width: 1020px) {
+    .questions {
+        width: 74%;
+    }
+}
+@media (max-width: 960px) {
+    .questions {
+        width: 72.5%;
+    }
+}
+@media (max-width: 910px) {
+    .questions {
+        width: 71%;
+    }
+}
+@media (max-width: 860px) {
+    .questions {
+        width: 69%;
+    }
+}
+@media (max-width: 810px) {
+    .questions {
+        width: 67%;
+    }
+}
+@media (max-width: 755px) {
+    .questions {
+        width: 65%;
+    }
+}
+@media (max-width: 715px) {
+    .questions {
+        width: 63%;
+    }
+}
+@media (max-width: 680px) {
+    .questions {
+        width: 61%;
+    }
+}
+@media (max-width: 645px) {
+    .questions {
+        width: 58.5%;
+    }
+}
+@media (max-width: 600px) {
+    .questions {
+        width: 55.5%;
+    }
+}
+@media (max-width: 570px) {
     .q_top_content {
         display: flex;
         justify-content: space-between;
@@ -194,5 +265,20 @@
     .creator_inf {
         align-items: center;
         margin: 5px 0 0 5px;
+    }
+}
+@media (max-width: 565px) {
+    .questions {
+        width: 52.5%;
+    }
+}
+@media (max-width: 530px) {
+    .questions {
+        width: 49%;
+    }
+}
+@media (max-width: 500px) {
+    .questions {
+        width: 46%;
     }
 }

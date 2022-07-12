@@ -1,0 +1,137 @@
+.sign_content {
+    background-image: url(../images/header-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0 10px 0;
+}
+
+.sign_box ,
+.sign_in_box {
+    margin: 0 auto;
+    width: 500px;
+    margin-top: 80px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 5px;
+    z-index: 10;
+    box-shadow: 0 10px 80px rgba(0, 0, 0, .05);
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4a4e69;
+}
+
+.sign_logo_box {
+    position: absolute;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sign_logo {
+    width: 220px;
+}
+
+.sign_form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sign_input {
+    width: 100%;
+    font-size: 17px;
+    padding: 10px;
+    border: none;
+    margin: 10px 0;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: .2s;
+}
+.sign_input:focus {
+    border-color: #3b82f6;
+}
+
+.sign_btn {
+    width: 106%;
+    padding: 8px 10px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #3b82f6;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    margin: 10px 0 0 0;
+    transition: .2s;
+    cursor: pointer;
+}
+.sign_btn:hover {
+    background-color: #0062ff;
+}
+
+.greeting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.sign_tit {
+    font-size: 30px;
+    color: #4a4e69;
+    font-family: Lale;
+}
+
+.sign_greeting {
+    font-size: 17px;
+    margin-top: 5px;
+    font-weight: 100;
+    color: #4a4e69c8;
+}
+
+.other_way {
+    width: 100%;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 3px;
+    color: #4a4e69c8;
+}
+
+.other_way_btn {
+    background-color: #4a4e69;
+    border-radius: 3px;
+    color: #fff;
+    padding: 3px 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: .2s;
+}
+
+/* responsive */
+@media (max-width: 578px) {
+    .sign_content {
+        background-color: #fff;
+    }
+    .sign_box {
+        width: 100%;
+        padding: 30px 0;
+        border-radius: 30px;
+        margin-bottom: 0;
+        border-color: #fff;
+        box-shadow: none;
+    }
+    .sign_form {
+        width: 85%;
+    }
+    .sign_in_box {
+        padding: 30px 0 92px 0;
+    }
+}

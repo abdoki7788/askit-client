@@ -1,0 +1,520 @@
+@font-face {
+    font-family: Lale;
+    src: url(../font/Lalezar-Regular.ttf);
+}
+
+.profile {
+    direction: ltr;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.profile_content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    direction: rtl;
+}
+
+.profile_info {
+    width: 90%;
+    margin-top: 20px;
+}
+
+/* sec 1 */
+
+.first_sec {
+    position: relative;
+    background-color: #fff;
+    padding: 20px 20px 30px 20px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+
+.user_box {
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.user_cover {
+    background-image: url(../images/cover.png);
+    width: 100%;
+    height: 396px;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    background-position: center;
+}
+
+.user_avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: 8px solid #fff;
+    top: 380px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../images/MOS.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.user_information {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edit_btn {
+    background-color: #3b82f6;
+    color: #fff;
+    font-size: 20px;
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #3b82f6;
+    transition: .2s;
+}
+.edit_btn:hover {
+    background: none;
+    color: #3b82f6;
+}
+
+.user_name {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: -85px;
+    font-size: 32px;
+    font-family: Lale;
+    color: #4a4e69;
+}
+
+.follow_status {
+    display: flex;
+    font-size: 18px;
+}
+
+.followers,
+.followings {
+    color: #4a4e69;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    padding: 5px 0;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.followers:hover,
+.followings:hover {
+    color: #3b82f6;
+}
+
+.followers .how_many_f,
+.followings .how_many_f {
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Lale;
+    margin-bottom: -10px;
+}
+
+.followers {
+    margin-left: 10px;
+}
+
+.followings {
+    margin: 0;
+}
+
+
+/* sec 2 */
+.second_sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.inf_box_content {
+    display: flex;
+    align-items: center;
+}
+
+.inf_box_icon {
+    font-size: 32px;
+    margin-left: 10px;
+}
+
+.inf_title {
+    font-size: 16px;
+    color: #4a4e69;
+}
+
+.inf_how_much {
+    font-family: Lale;
+    color: #4a4e69;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.inf_box {
+    background-color: #fff;
+    width: 28%;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inf_box_1 {
+    color: rgb(255, 191, 0);
+}
+.inf_box_2 {
+    color: #3b82f6;
+}
+.inf_box_3 {
+    color: rgb(0, 189, 0);
+}
+
+
+/* sec 3 */
+
+.third_sec {
+    padding: 30px 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.about_tit {
+    margin-bottom: 5px;
+}
+
+
+/* sec 4 */
+
+.fourth_sec {
+    border-radius: 15px;
+    padding: 30px 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.user_questions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.between_content {
+    margin: 0 0 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.more_questions {
+    color: #fff;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    padding: 6px 12px;
+    z-index: 3;
+    background-color: #4a4e69;
+    border: 1px solid #4a4e69;
+    cursor: pointer;
+    display: none;
+    transition: .2s;
+}
+.more_questions:hover {
+    background: none;
+    color: #4a4e69;
+}
+.more_questions.show {
+    display: flex;
+}
+
+.arrow_icon {
+    font-size: 14px;
+    margin: 0 5px 0 0;
+}
+
+.questions_sec_title,
+.about_tit {
+    font-size: 28px;
+    font-family: Lale;
+    color: #4a4e69;
+    display: flex;
+    align-items: center;
+    z-index: 4;
+    padding-left: 10px;
+    background-color: #fff;
+}
+
+.user_q {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #4a4e6924;
+    width: 45%;
+}
+
+.user_q_tit {
+    color: #4a4e69;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: Vazir-Bold;
+    user-select: none;
+    direction: rtl;
+    width: 100%;
+    border-bottom: 1px solid #eee;
+    padding: 0 0 10px 0;
+    margin-bottom: 15px;
+    transition: .2s;
+}
+.user_q_tit:hover {
+    color: #3b82f6;
+}
+
+.user_q_desc {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    margin-bottom: 5px;
+}
+
+.user_q_tags {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    direction: rtl;
+}
+
+.user_q_tag {
+    background-color: #f6f7f8;
+    border-width: 1px 1px 3px 1px;
+    padding: 3px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Vazir-Variable;
+    font-size: 14px;
+    border: 1px solid #4a4e6924;
+    color: #4a4e69;
+    margin: 10px 0 0 10px;
+    transition: .2s;
+}
+.user_q_tag:hover {
+    border-width: 1px;
+    color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+.texts_starter {
+    width: 9px;
+    height: 9px;
+    display: inline-block;
+    background-color: #4a4e69;
+    margin: 0 8px;
+    border-radius: 30%;
+    margin-top: 5px;
+}
+
+.no_questions {
+    margin: 40px auto 78px auto;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #4a4e69;
+    font-family: Lale;
+}
+
+.make_question {
+    width: 150px;
+    font-size: 20px;
+    background-color: #4a4e69;
+    border: 1px solid #4a4e69;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    font-weight: 100;
+    cursor: pointer;
+    transition: .2s;
+}
+.make_question:hover {
+    color: #4a4e69;
+    background: none;
+}
+
+.hr {
+    width: 72%;
+    background-color: #4a4e6924;
+    height: 1px;
+    position: absolute;
+    left: 110px;
+    margin-top: 5px;
+}
+.hr.show {
+    width: 70%;
+    left: 190px;
+}
+
+.blue_box {
+    background-color: #3b82f6;
+    width: 250px;
+    height: 10px;
+    border-radius: 0 0 100px 100px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: -16px;
+}
+
+
+/* all-questions */
+.all_user_questions {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.all_u_q_list {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 90px;
+    position: relative;
+}
+
+.all_u_q_tit {
+    font-family: Lale;
+    font-size: 35px;
+    position: absolute;
+    right: 0;
+    top: -70px;
+    text-align: center;
+    color: #4a4e69;
+}
+
+.user_qs {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #4a4e6924;
+    width: 47%;
+    margin-bottom: 7px;
+}
+
+/* responsive */
+@media (max-width: 980px) {
+    .inf_box {
+        width: 26%;
+    }
+}
+@media (max-width: 940px) {
+    .hr.show {
+        width: 70%;
+        left: 170px;
+    }
+}
+@media (max-width: 900px) {
+    .user_questions {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }    
+    .user_q {
+        margin-top: 20px;
+        width: calc(100% - 35px);
+    }
+    .edit_btn {
+        font-size: 16px;
+    }
+    .user_avatar {
+        width: 150px;
+        height: 150px;
+        top: 390px;
+    }
+    .user_name {
+        font-size: 28px;
+        bottom: -75px;
+    }
+    .follow_status {
+        font-size: 16px;
+    }
+    .followers .how_many_f,
+    .followings .how_many_f {
+        font-size: 30px;
+    }
+    .followers {
+        margin-left: -10px;
+    }
+}
+@media (max-width: 845px){
+    .hr.show {
+        width: 50%;
+    }
+}
+@media (max-width: 720px) {
+    .second_sec {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .inf_box {
+        width: 93.6%;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 670px) {
+    .edit_btn {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+    .user_name {
+        font-size: 25px;
+        bottom: -75px;
+    }
+    .follow_status {
+        font-size: 14px;
+    }
+    .followers .how_many_f,
+    .followings .how_many_f {
+        font-size: 25px;
+    }
+    .followers {
+        margin-left: -25px;
+    }
+    .user_avatar {
+        width: 120px;
+        height: 120px;
+        top: 390px;
+    }
+}
+@media (max-width: 610px) {
+    .how_many_f_tit {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .followers {
+        margin-left: -60px;
+    }
+}

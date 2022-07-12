@@ -4,18 +4,20 @@
 
 .menu {
     color: #fff;
-    padding: 10px;
+    padding: 20px 10px;
     width: 55px;
-    height: 50%;
+    height: 25%;
     position: fixed;
-    left: 50px;
-    bottom: 38px;
+    left: 70px;
+    top: 186px;
     font-size: 20px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     list-style: none;
+    border-radius: 5px;
+    background-color: #fff;
 }
 
 li {
@@ -25,52 +27,63 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
-    color: #00B4D8;
-    border: 2px solid #eee;
+    border-radius: 0px;
+    color: #3b82f6;
+    border: 2px solid transparent;
 }
-li:hover {
-    border: 2px solid #00B4D8;
+
+.selected {
+    background-color: #3b82f6;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+    transition: .2s;
+    color: #fff;
+    border: 2px solid #3b82f6;
 }
 
 .search_box {
-    width: 70%;
+    margin: 2px 0 2px 0px;
 }
 
 .search_form {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    padding: 0 0;
+    border-radius: 5px;
 }
 
 .search_input {
-    border: none;
-    padding: 9px 13px;
-    background-color: #fff;
+    padding: 13px 13px 13px 50px;
     border-radius: 5px;
     outline: 0;
     direction: rtl;
     font-size: 15px;
-    width: 500px;
+    width: 400px;
     border: 1px solid rgb(226, 226, 226);
+}
+.search_input:focus {
+    border-color: #3b82f6;
 }
 
 .search_icon {
-    background-color: #fff;
-    padding: 10.8px;
+    background: none;
     display: flex;
-    border-radius: 5px;
     font-size: 20px;
-    color: #00B4D8;
-    margin-right: 5px;
+    color: rgb(178, 178, 178);
     transition: .2s;
     cursor: pointer;
-    border: 1px solid rgb(226, 226, 226);
+    border: none;
+    position: relative;
+    left: 40px;
 }
 .search_icon:hover {
-    color: #fff;
-    background: #00B4D8;
-    border-color: #00B4D8;
+    color: #3b82f6;
 }
 
 .search_layer {
@@ -81,7 +94,7 @@ li:hover {
     justify-content: center;
     align-items: center;
     direction: ltr;
-    margin: 20px 0;
+    margin: 18px 0;
 }
 
 .filter_layer {
@@ -96,9 +109,9 @@ li:hover {
     justify-content: flex-start;
 }
 .filter_b {
-    padding: 10px;
+    padding: 13px;
     border-radius: 5px;
-    border: 1px solid #4a4e69;
+    border: 1px solid #fff;
     cursor: pointer;
     transition: .2s;
     user-select: none;
@@ -109,6 +122,7 @@ li:hover {
 }
 .filter_b:hover {
     background-color: #eee;
+    border-color: #22223b;
 }
 .filter_b span {
     border-left: 1px solid #4a4e69;
@@ -167,17 +181,17 @@ li:hover {
     margin: 20px 0 0 0;
 }
 .time_filter {
-    background-color: #eee;
+    background-color: #3b82f6;
+    color: #fff;
     font-size: 18px;
-    padding: 10px;
+    padding: 6px 10px;
     border-radius: 5px;
     margin: 0 10px 10px 0;
     transition: .2s;
     cursor: pointer;
-    border: 1px solid #ccc;
 }
 .time_filter:hover {
-    background-color: #ccc;
+    background-color: #0062ff;
 }
 .close_icon {
     position: absolute;
@@ -187,28 +201,12 @@ li:hover {
     cursor: pointer;
     transition: .2s;
     padding: 4px 7px;
-    border-radius: 8px;
+    border-radius: 3px;
 }
 .close_icon:hover {
     color: #fff;
     background-color: red;
 }
-
-.selected {
-    background-color: #00B4D8;
-    cursor: pointer;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    transition: .2s;
-    color: #fff;
-    border: 2px solid #00B4D8;
-}
-
-
 
 .best_users_search_form {
     display: flex;
@@ -235,7 +233,7 @@ li:hover {
     display: flex;
     border-radius: 5px;
     font-size: 20px;
-    color: #00B4D8;
+    color: #3b82f6;
     margin-right: 5px;
     transition: .2s;
     cursor: pointer;
@@ -243,13 +241,30 @@ li:hover {
 }
 .best_users_search_icon:hover {
     color: #fff;
-    background: #00B4D8;
-    border-color: #00B4D8;
+    background: #3b82f6;
+    border-color: #3b82f6;
 }
 
+.scroll_btn {
+    color: #fff;
+    background-color: #3b82f6;
+    font-size: 22px;
+    position: fixed;
+    left: 70px;
+    bottom: 170px;
+    cursor: auto !important;
+    transition: .2s;
+    opacity: 0;
+    padding: 10px;
+    width: 55px;
+    border-radius: 5px;
+}
+.scroll_btn.show {
+    opacity: 1;
+    cursor: pointer !important;
+}
 
-
-/* Responsive */
+/* responsive */
 @media (max-width: 899px) {
     .search_layer_show {
         justify-content: flex-end;
