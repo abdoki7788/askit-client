@@ -13,7 +13,7 @@ import store from './redux/store';
 // react-router
 import { Route, Routes } from 'react-router-dom';
 
-function App() {
+export default function App() {
   return (
     <Provider store={store}>
       <div className='App'>
@@ -29,5 +29,3 @@ function App() {
     </Provider>
   );
 }
-
-export default App;

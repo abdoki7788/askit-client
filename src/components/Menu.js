@@ -37,6 +37,7 @@ function FilterBox() {
     let [ timeFilterManner , setTimeFilterManner ] = useState(false);
     let [ showFilterManner , setShowFilterManner ] = useState(false);
     let [ filterHover , setFilterHover ] = useState(false);
+    let [ filterHover2 , setFilterHover2 ] = useState(false);
 
     const timeFilterMannerHandler = () => {
         setTimeFilterManner(! timeFilterManner)
@@ -54,7 +55,7 @@ function FilterBox() {
                 <div className='filter_layer'>
                     <div className='filter_b filter_box_1' onMouseEnter={() => setFilterHover(true)} onMouseLeave={() => setFilterHover(false)} onClick={timeFilterMannerHandler}><span className={`${filterHover ? 'show' : ''}`}>فیلتر زمانی</span><FontAwesomeIcon className={`filter_tit_icon ${filterHover ? 'show' : ''}`} icon={faSliders} /></div>
 
-                    <div className='filter_b filter_box_2' onMouseEnter={() => setFilterHover(true)} onMouseLeave={() => setFilterHover(false)} onClick={showFilterMannerHandler}><span className={`${filterHover ? 'show' : ''}`}>فیلتر نمایش</span><FontAwesomeIcon className={`filter_tit_icon ${filterHover ? 'show' : ''}`} icon={faSliders} /></div>
+                    <div className='filter_b filter_box_2' onMouseEnter={() => setFilterHover2(true)} onMouseLeave={() => setFilterHover2(false)} onClick={showFilterMannerHandler}><span className={`${filterHover2 ? 'show' : ''}`}>فیلتر نمایش</span><FontAwesomeIcon className={`filter_tit_icon ${filterHover2 ? 'show' : ''}`} icon={faSliders} /></div>
                 </div>
 
                 <div className='search_layer'>

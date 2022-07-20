@@ -1,0 +1,142 @@
+.information_box {
+    width: 27%;
+    display: flex;
+    flex-direction: column;
+}
+
+.inf_box_tit {
+    font-family: Lale;
+    font-size: 24px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.topics_tags ,
+.best_users ,
+.hot_topics {
+    background-color: #fff;
+    border-radius: 5px;
+    width: 98%;
+    padding: 15px 10px;
+    margin-bottom: 20px;
+    color: #4a4e69;
+}
+
+.topics_tags_content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: 8px;
+}
+
+.topic_tag {
+    background-color: #eee;
+    padding: 3px 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: Vazir-Variable;
+    margin: 8px 8px 0 0;
+    font-size: 14px;
+    color: #4a4e69;
+    transition: .2s;
+}
+.topic_tag:hover {
+    background-color: #4a4e69;
+    color: #fff;
+}
+
+.title_hr {
+    width: 100%;
+    background-color: #ccc;
+    height: 1px;
+    margin: 5px 0 8px 0;
+}
+
+.hot_topics_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hot_topic {
+    background-color: rgb(244, 244, 244);
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 6px 10px;
+    border-radius: 3px;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.topic_title {
+    color: #4a4e69;
+    font-size: 13px;
+    font-family: Vazir-Bold;
+    cursor: pointer;
+    transition: .2s;
+}
+.topic_title:hover {
+    color: #3b82f6;
+}
+
+.topic_creator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+    border-left: 1px solid #4a4e6924;
+    padding-left: 15px;
+}
+
+.topic_creator_name {
+    color: #4a4e69;
+    margin-top: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    font-family: Lale;
+    letter-spacing: .5px;
+}
+.topic_creator_name:hover {
+    color: #3b82f6;
+}
+
+.topic_creator_profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #666;
+}
+
+.best_users_content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: #4a4e69;
+}
+
+.best_user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    margin-top: 8px;
+}
+
+.best_user_profile {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #3b82f6;
+    border-radius: 50%;
+    background-color: #4a4e69;
+}
+
+.best_user_name {
+    margin-top: 5px;
+    cursor: pointer;
+    transition: .2s;
+    font-family: Lale;
+    letter-spacing: .5px;
+}
+.best_user_name:hover {
+    color: #3b82f6;
+}
