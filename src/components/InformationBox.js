@@ -50,8 +50,18 @@ function InformationBox() {
 
     return ( 
         <div className='information_box'>
+            <div className='topics_tags'>
+                <div className='inf_box_tit'>تگ ها </div>
+
+                <div className='topics_tags_content'>
+                    {
+                        allTags.map(tag => <div key={tag.id} className='topic_tag'># {tag.name}</div>)
+                    }
+                </div>
+            </div>
+
             <div className='hot_topics'>
-                <div className='inf_box_tit'>پرسش های داغ هفته <div className='title_hr'></div></div>
+                <div className='inf_box_tit'>پرسش های داغ هفته </div>
 
                 <div className='hot_topics_content'>
                     {
@@ -68,18 +78,8 @@ function InformationBox() {
                 </div>
             </div>
 
-            <div className='topics_tags'>
-                <div className='inf_box_tit'>تگ ها <div className='title_hr'></div></div>
-
-                <div className='topics_tags_content'>
-                    {
-                        allTags.map(tag => <div key={tag.id} className='topic_tag'># {tag.name}</div>)
-                    }
-                </div>
-            </div>
-
             <div className='best_users'>
-                <div className='inf_box_tit'>کاربران فعال <div className='title_hr'></div></div>
+                <div className='inf_box_tit'>کاربران فعال </div>
 
                 <div className='best_users_content'>
                     {

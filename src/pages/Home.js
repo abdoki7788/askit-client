@@ -8,7 +8,7 @@ import Questions from '../components/Questions';
 // assets
 import '../assets/style/main.css'
 
-function Home() {
+export default function Home() {
     return ( 
         <div className='home'>
             <Alert />
@@ -18,10 +18,6 @@ function Home() {
                 <Menu />
                 <Questions />
             </div>
-
-            {/* <Footer /> */}
         </div>
      );
 }
-
-export default Home;

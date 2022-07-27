@@ -1,5 +1,6 @@
 // components
 import InformationBox from './InformationBox';
+import { Route, Routes } from 'react-router-dom';
 
 // axios
 import axios from 'axios';
@@ -13,20 +14,18 @@ import { Link } from 'react-router-dom';
 // fontawesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faBookmark } from '@fortawesome/free-solid-svg-icons';
-import { useEffect, useState } from 'react';
 
 export default function Questions() {
 
-    let [topics, setTopics] = useState(
-        axios.get('http://127.0.0.1:8070/topics')
-            .then(response => JSON.parse(response.data).items)
-            .catch(err => console.log(err.data))
-    )
+    let topics = axios.get('http://127.0.0.1:8070/topics')
+        .then(response => response.data.items)
+        .catch(err => console.log('error',err))
+
     return (
         <div className='main_content'>
             <div className='questions'>
                 {
-                    topics.length = 1
+                    topics.length >= 1
                         ? topics.length > 1 
                                 ? topics.map((ques, index) =>
                                     <div key={index} className='q_box'>

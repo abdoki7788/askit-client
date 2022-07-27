@@ -8,7 +8,7 @@
 }
 
 .main_content {
-    margin-top: 20px;
+    margin-top: 10px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -184,6 +184,17 @@
     cursor: pointer;
     font-size: 19px;
     border-radius: 5px;
+}
+
+.noTopics {
+    margin: 120px auto;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #4a4e69;
+    font-family: Lale;
 }
 
 /* responsive */

@@ -58,7 +58,6 @@
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url(../images/MOS.png);
     background-repeat: no-repeat;
     background-size: cover;
 }

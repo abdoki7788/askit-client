@@ -1,6 +1,6 @@
 .filter_box {
-    width: 102.5%;
-    margin-top: 20px;
+    width: 102%;
+    margin-top: 10px;
     border-radius: 5px;
 }
 
@@ -30,8 +30,8 @@
     direction: rtl;
     font-size: 15px;
     width: 100%;
-    border: 1px solid #ccc;
     transition: .2s;
+    border: 1px solid #fff;
 }
 .search_input:focus {
     border-color: #3b82f6;
@@ -71,7 +71,7 @@
 .filter_b {
     padding: 10px;
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #fff;
     cursor: pointer;
     transition: .2s;
     user-select: none;
@@ -82,6 +82,7 @@
 }
 .filter_b:hover {
     border-color: #3b82f6;
+    border-width: 1px;
     color: #3b82f6;
 }
 .filter_b span {

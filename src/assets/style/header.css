@@ -1,12 +1,13 @@
 header {
     background-color: #fff;
-    width: 97.5%;
+    width: 97%;
     padding: 15px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
     border-radius: 10px;
+    position: relative;
 }
 
 .header_logo {
@@ -67,4 +68,236 @@ header {
     color: #3b82f6;
     padding: 0;
     margin-left: 5px;
+}
+
+.prof_inf {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.user_profile_shortcut,
+.user_profile_shortcut_2 {
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0px 20px 0 0;
+    border: 2px solid #3b82f6;
+    z-index: 11;
+}
+
+.drop_down {
+    width: 330px;
+    background-color: #fff;
+    height: 400px;
+    position: absolute;
+    left: 0;
+    top: 80px;
+    z-index: 10;
+    display: none;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.drop_down.show {
+    display: flex;
+}
+
+.big_back {
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 9;
+    display: none;
+}
+.big_back.show {
+    display: flex;
+}
+
+.drop_sec {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.drop_sec_1 {
+    margin: 0;
+    flex-direction: column;
+    position: relative;
+    color: #000;
+    background-color: #3b82f6;
+    height: 50px;
+    border-radius: 5px 5px 0 0;
+}
+
+.see_profile {
+    position: absolute;
+    bottom: -105px;
+    background-color: #3b82f6;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 14px;
+    border: 1px solid #3b82f6;
+    cursor: pointer;
+    transition: .2s;
+    z-index: 10;
+}
+.see_profile:hover {
+    background-color: #fff;
+    color: #3b82f6;
+}
+
+.drop_hr {
+    height: 1px;
+    background-color: #3b82f6;
+    width: 100%;
+    position: absolute;
+    top: 140px;
+}
+
+.user_profile_shortcut_2 {
+    margin-left: 10px;
+    position: absolute;
+    top: 20px;    
+    width: 65px;
+    height: 65px;
+
+}
+
+.user_name_shortcut {
+    font-size: 20px;
+    font-family: Lale;
+    letter-spacing: .5px;
+    position: absolute;
+    bottom: -75px;
+}
+
+.drop_sec_2 ,
+.drop_sec_3 ,
+.drop_sec_4 {
+    color: #fff;
+    position: relative;
+    background-color: rgb(255, 191, 0);
+    width: 70%;
+    border-radius: 3px;
+    margin: 135px auto 0 auto;
+    height: 40px;
+}
+
+.drop_sec_3 {
+    background-color: #3b82f6;
+    margin: 10px auto 0 auto;
+}
+
+.drop_sec_4 {
+    background-color: rgb(0, 189, 0);
+    margin: 10px auto 0 auto;
+}
+
+.user_score {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    position: absolute;
+    right: 10px;
+}
+
+.sec_i {
+    font-size: 22px;
+    margin-left: 6px;
+}
+
+.howmuch_score {
+    position: absolute;
+    left: 10px;
+    margin-top: 0px;
+    padding: 4px 5px 0 5px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
+
+.logout_btn {
+    padding: 2px 8px;
+    cursor: pointer;
+    transition: .2s;
+    background-color: #fff;
+    color: #000;
+    border-radius: 3px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 14px;
+    border: 1px solid #fff;
+    letter-spacing: .5px;
+}
+.logout_btn:hover {
+    background: none;
+    color: #fff;
+}
+
+.status_icon {
+    background-color: rgb(255, 191, 0);
+    color: #fff;
+    font-size: 20px;
+    padding: 8px;
+    border-radius: 3px 3px 50% 50%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+.dark_mode_btn {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    width: 100%;
+    color: #000;
+    border-radius: 0 0 5px 5px;
+    height: 35px;
+}
+
+.dark_mode_icon {
+    background-color: #fff;
+    font-size: 25px;
+    padding: 8px;
+    border-radius: 50%;
+    border: 2px solid #000;
+    position: absolute;
+    top: -20px;
+    right: 20px;
+    transition: .2s;
+}
+.dark_mode_icon.show {
+    background-color: #000;
+    color: #fff;
+}
+
+.changer {
+    border: 2px solid #000;
+    color: #000;
+    background: none;
+    position: absolute;
+    top: -13px;
+    left: 20px;
+    background-color: #fff;
+    font-size: 16px;
+    border-radius: 3px;
+    padding: 0 8px;
+    cursor: pointer;
+    transition: .2s;
+}
+.changer:hover {
+    background-color: #000;
+    color: #fff;
 }

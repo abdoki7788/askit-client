@@ -8,7 +8,7 @@ import { faSearch , faSliders , faXmark, faArrowUp } from '@fortawesome/free-sol
 // hooks
 import { useState, useEffect } from 'react';
 
-function FilterBox() {
+export default function FilterBox() {
 
     const [ scrolled, setScrolled ] = useState();
 
@@ -98,5 +98,3 @@ function FilterBox() {
         </div>
      );
 }
-
-export default FilterBox;
